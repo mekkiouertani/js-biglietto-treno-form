@@ -12,7 +12,8 @@ price = kmPrice * km ;
 button.addEventListener('click', function(){
     km = parseInt(document.getElementById('kmToTravel').value);
     age = parseInt(document.getElementById('passengerAge').value);
-    //solo caratterri numerici
+    console.log('km',km, "/",'età',age);    
+    //IF solo caratterri numerici
     if (isNaN(kmToTravel) || isNaN(passengerAge)) { 
         location.reload();
     } 
@@ -21,11 +22,10 @@ button.addEventListener('click', function(){
         price -= discountUnder18 * price;
     } else if (age > 65){
         price -= discountOver65 * price;
-    }
+    } console.log('prezzo del biglietto €',price.toFixed(2)); 
 });
 
 
 //CONSOLE LOG
 console.log(button);
-console.log('prezzo del biglietto €',price.toFixed(2)); 
-console.log('km',km, "/",'età',age);    
+
