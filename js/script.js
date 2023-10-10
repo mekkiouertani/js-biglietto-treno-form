@@ -28,6 +28,10 @@ button.addEventListener('click',
         document.querySelector('.box-nticket').innerHTML = Math.floor(100000000 + Math.random() * 900000000);
         const boxPrice = document.querySelector('.box-price');
         boxPrice.innerHTML = `${price.toFixed(2)} €`;
+        //RIMOZIONE DISPLAY-NONE
+        const boxTicket = document.getElementById('print-ticket');
+        boxTicket.classList.remove('d-none');
+        
     }
 );
 
