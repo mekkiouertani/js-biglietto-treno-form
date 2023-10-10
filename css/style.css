@@ -2,10 +2,11 @@ body{
     background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,45,101,1) 100%);
     background-repeat: no-repeat;
+    background-color: #23c1c3;
 }
 
 #print-ticket{
-    width: 50%;
+    width: 600px;
     height: 200px;
 }
 

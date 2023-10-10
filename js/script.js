@@ -21,7 +21,13 @@ button.addEventListener('click',
             price -= discountUnder18 * price;
         } else if (age > 65){
             price -= discountOver65 * price;
-        }   console.log('prezzo del biglietto €',price.toFixed(2));  
+        }   console.log('prezzo del biglietto €',price.toFixed(2));
+        //CONST per biglietto     
+        const boxId = document.querySelector('.box-id');
+        boxId.innerHTML = id;
+        document.querySelector('.box-nticket').innerHTML = Math.floor(100000000 + Math.random() * 900000000);
+        const boxPrice = document.querySelector('.box-price');
+        boxPrice.innerHTML = `${price.toFixed(2)} €`;
     }
 );
 
