@@ -3,14 +3,15 @@ const kmPrice = 0.21;
 const discountUnder18 = 20/100; //20%
 const discountOver65 = 40/100;  //40%
 const button = document.querySelector('.btn');
-let km, age, price; //dichiaro le variabili
+let km, age, price, id; //dichiaro le variabili
 //EVENT LISTERER
 button.addEventListener('click', 
     function(){
         km = parseInt(document.getElementById('kmToTravel').value);
         age = parseInt(document.getElementById('passengerAge').value);
+        id = document.getElementById('idPassenger').value;
         price = kmPrice * km ;
-        console.log('km', km, "/",'età', age);  
+        console.log('km', km, "/",'età', age, '/', 'nome =', id);  
         //IF solo caratterri numerici
         if (isNaN(km) || isNaN(age)) { 
             location.reload();
