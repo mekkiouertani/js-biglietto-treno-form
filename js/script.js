@@ -10,7 +10,7 @@ button.addEventListener('click',
         km = parseInt(document.getElementById('kmToTravel').value);
         age = parseInt(document.getElementById('passengerAge').value);
         price = kmPrice * km ;
-        console.log('km',km, "/",'età',age);  
+        console.log('km', km, "/",'età', age);  
         //IF solo caratterri numerici
         if (isNaN(km) || isNaN(age)) { 
             location.reload();
